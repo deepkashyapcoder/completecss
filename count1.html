@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            counter-reset: my-counter;
+        }
+
+        h1::before {
+            content: "Section" counter(my-counter)": ";
+            counter-increment: my-counter 1;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Counter 
+    1. counter-increment
+    2. counter-reset
+    3. counter()
+    -->
+    <h1>HTML</h1>
+    <h1>CSS</h1>
+    <h1>JS</h1>
+    <h1>PHP</h1>
+</body>
+
+</html>

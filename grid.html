@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background-color: rgb(203, 203, 203);
+            height: 80vh;
+            display: grid;
+            /* grid-template-columns: repeat(3, 2fr); */
+            /* grid-template-columns: 150px 150px 150px 150px; */
+            /* grid-template-columns:33% 33% 33%; */
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr minmax(100px, max-content);
+            /* grid-template-columns: 150px auto 150px; */
+            gap: 10px;
+
+        }
+
+        .item1 {
+            background-color: lightblue;
+            /* grid-column: 2/3; */
+            /* order: 3; */
+            /* grid-column: 1/3; */
+            
+        }
+
+        .item2 {
+            background-color: slateblue;
+            /* grid-column: 1/2; */
+            /* order: 4; */
+
+        }
+
+        .item3 {
+            background-color: lightcoral;
+            /* order: 1; */
+            /* grid-row: 2/4;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px; */
+
+        }
+
+        .item4 {
+            background-color: lightgreen;
+            /* order: 2; */
+        }
+
+        .item5 {
+            background-color: lightseagreen;
+            /* order: 6; */
+        }
+
+        .item6 {
+            background-color: lightskyblue;
+            /* order: 5; */
+
+        }
+
+        .subitem1{
+            background-color: lightsalmon;
+        }
+        .subitem2{
+            background-color: lightseagreen;
+        }
+        .subitem3{
+            background-color: lightcyan;
+        }
+        .subitem4{
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">
+            <!-- <div class="subitem subitem1">1</div>
+            <div class="subitem subitem2">2</div>
+            <div class="subitem subitem3">3</div>
+            <div class="subitem subitem4">4</div> -->
+        </div>
+        <div class="item item4">4</div>
+        <div class="item item5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque esse quam voluptatum sed dicta nihil iusto, exercitationem quae fugiat dolorem quidem saepe neque, quisquam perferendis ipsum vero cumque eaque quas nostrum eum blanditiis deleniti! Totam cumque maiores ex non aut similique dicta magnam, porro nemo reprehenderit esse repellat eius, dolor sapiente repudiandae veritatis cum! Nulla, libero quo itaque necessitatibus debitis veritatis tenetur voluptate odio voluptas excepturi accusantium laborum officiis expedita? Similique distinctio ea libero enim veniam sunt, qui asperiores cupiditate, in nulla beatae, minima ipsum dicta explicabo ipsam inventore saepe incidunt eveniet voluptatibus quam placeat. Error laboriosam reiciendis nihil labore ad, vel nam beatae culpa quam tempore fugiat distinctio magnam repellendus, quas, voluptatem eaque quibusdam provident voluptatum similique? Ipsa, culpa. Accusantium nulla aperiam perspiciatis perferendis eius sit omnis vero nostrum suscipit. Repudiandae ipsa molestiae consequatur aut reprehenderit enim, nisi aspernatur impedit placeat dolores accusantium omnis quasi molestias ipsam cupiditate non, eligendi itaque. Saepe nisi facere provident vitae illo, temporibus vero laboriosam tenetur labore? Temporibus ullam iure reprehenderit cum molestiae quae aliquam aperiam ea aliquid sunt dignissimos quasi commodi corrupti qui pariatur omnis quia, amet quo tempore repellat libero! Amet architecto exercitationem similique aut culpa explicabo perferendis aliquid officia ipsum, quidem, quaerat vero blanditiis provident modi ut officiis eum sapiente at voluptatibus quam quibusdam praesentium libero aperiam! Unde quidem earum rem, blanditiis, in incidunt nesciunt illum iure corporis explicabo sequi corrupti repudiandae quae nisi illo amet minima deserunt porro animi quisquam molestiae fugiat, tempore itaque tenetur? Amet atque sapiente minima adipisci.</div>
+        <div class="item item6">6</div>
+    </div>
+
+</body>
+
+</html>

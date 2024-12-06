@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .progress-bar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            /* background:
+                radial-gradient(closest-side, white 79%, transparent 80% 100%),
+                conic-gradient(hotpink 75%, pink 0); */
+                /* background:radial-gradient(closest-side, white 80%, transparent 80% 100%), conic-gradient(red 75%, yellow 0);
+             */
+        }
+        .boc{
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+            border-radius: 50%;
+            background: conic-gradient(from 45deg, red 0deg, orange 90deg, blue 90deg, purple 180deg );
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="progress-bar">
+        <progress value="75" min="0" max="100" style="visibility:hidden;height:0;width:0;">75%</progress>
+    </div>
+    <div class="boc">
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 80%;
+            height: 500px;
+            background-color: lightgray;
+            margin: 20px auto;
+            display: grid;
+            /* grid-template-columns: repeat(4, 1fr); */
+            grid-template-columns: max-content 1fr 1fr min-content;
+            /* grid-template-rows: repeat(2, 1fr); */
+            /* grid-template-rows: repeat(2, min-content); */
+            grid-template-rows: repeat(2, minmax(150px, min-content));
+            gap: 20px;
+        }
+        .item{
+            color: white;
+            font-size: 20px;
+        }
+        .item1{
+            background-color: orangered;
+        }
+        .item2{
+            background-color: yellowgreen;
+        }
+        .item3{
+            background-color: slateblue;
+        }
+        .item4{
+            background-color: royalblue;
+        }
+        .item5{
+            background-color: goldenrod;
+        }
+        .item6{
+            background-color: hotpink;
+        }
+        .item7{
+            background-color: lightgreen;
+        }
+        .item8{
+            background-color: lightseagreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">first Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, veniam.</div>
+        <div class="item item2">second</div>
+        <div class="item item3">third</div>
+        <div class="item item4">fourth Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis incidunt aliquid, suscipit molestiae quis quo.</div>
+        <div class="item item5">fifth</div>
+        <div class="item item6">sixth</div>
+        <div class="item item7">seven</div>
+        <div class="item item8">eight</div>
+    </div>
+    
+</body>
+</html>

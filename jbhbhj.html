@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decorative Border Example</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+    }
+
+    header {
+      background-color: #3498db;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    main {
+      position: relative;
+      padding: 20px;
+    }
+
+    main::before,
+    main::after {
+      content: "";
+      position: absolute;
+      border: 2px solid #3498db;
+      width: 100%;
+      height: 100%;
+      top: -5px;
+      left: -5px;
+      z-index: -1;
+    }
+
+    main::before {
+      border-bottom: none;
+      border-right: none;
+    }
+
+    main::after {
+      border-top: none;
+      border-left: none;
+    }
+
+    article {
+      background-color: #ecf0f1;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background-color: #3498db;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Website with Decorative Border</h1>
+  </header>
+
+  <main>
+    <article>
+      <h2>Section 1</h2>
+      <p>This is the main content of section 1.</p>
+    </article>
+
+    <article>
+      <h2>Section 2</h2>
+      <p>This is the main content of section 2.</p>
+    </article>
+  </main>
+
+  <footer>
+    &copy; 2023 Your Website
+  </footer>
+
+</body>
+</html>

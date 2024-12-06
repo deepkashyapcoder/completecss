@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      background-color: #333;
+      overflow: hidden;
+    }
+
+    .navbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .navbar input {
+      display: none;
+    }
+
+    .navbar label {
+      display: none;
+      cursor: pointer;
+      background-color: #333;
+      color: white;
+      padding: 14px 16px;
+      text-align: center;
+      float: right;
+      font-size: 24px;
+      line-height: 1;
+    }
+
+    .navbar a.icon {
+      display: none;
+    }
+
+    @media screen and (max-width: 600px) {
+      .navbar a:not(:first-child) {
+        display: none;
+      }
+
+      .navbar a.icon {
+        float: right;
+        display: block;
+      }
+
+      .navbar input:checked ~ a:not(.icon) {
+        display: block;
+        text-align: center;
+        width: 100%;
+      }
+
+      .navbar input:checked + label {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <input type="checkbox" id="nav-toggle">
+    <label for="nav-toggle" class="icon">&#9776;</label>
+    <a href="#home" class="active">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+</body>
+</html>

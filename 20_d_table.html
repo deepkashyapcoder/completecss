@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #table {
+            display: table;
+            width: 600px;
+            border: 1px solid black;
+            margin: 0 auto;
+        }
+        .col {
+            display: table-cell;
+            border: 1px solid black;
+           
+        }
+        .row{
+            display: table-row;
+        }
+        #table-header{
+            display: table-header-group;
+            background-color: aqua;
+        }
+        #table-footer{
+            display: table-footer-group;
+            background-color: palevioletred;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div id="table">
+        <div id="table-header">
+            <div class="col">Roll No</div>
+            <div class="col">Student name</div>
+            <div class="col">Age</div>
+        </div>
+        <div class="row">
+            <div class="col">1</div>
+            <div class="col">Deepanshu Kashyap</div>
+            <div class="col">25</div>
+        </div>
+        <div class="row">
+            <div class="col">2</div>
+            <div class="col">Shubham Kashyap</div>
+            <div class="col">67</div>
+        </div>
+
+        <div id="table-footer">
+            <div class="col">Total Student</div>
+            <div class="col">2</div>
+            <div class="col"></div>
+        </div>
+
+    </div>
+</body>
+
+</html>

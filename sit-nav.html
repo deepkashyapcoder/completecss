@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <style>
+        /* #ind_drop {
+            display: none;
+            position: absolute;
+        }
+
+        #ind:focus-visible #ind_drop {
+            display: block;
+        } */
+
+        @media screen and (min-width:992px) {
+            #ind_drop {
+                /* display: none; */
+                visibility: hidden;
+                position: absolute;
+                top: 100px;
+                transition: 0.5s;
+            }
+
+            #ind:hover #ind_drop {
+                /* display: block; */
+                transform: translateY(-50px);
+                visibility: visible;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid bg-warning">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <nav class="navbar navbar-expand-lg d-flex justify-content-between">
+                            <div class="col-lg-3">
+                                <a href="" class="navbar-brand">Company Logo</a>
+                            </div>
+                            <div class="col-lg-7">
+                                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvasScrolling">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="offcanvas offcanvas-end p-3" data-bs-backdrop="false"
+                                    id="offcanvasScrolling">
+                                    <div class="offcanvas-header">
+
+                                        <button type="button" class="btn-close ms-auto" data-bs-dismiss="offcanvas"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <ul class="nav navbar-nav">
+                                        <li class="nav-item dropdown" id="ind">
+                                            <a href="" class="nav-link" data-bs-toggle="dropdown">Industrial Training</a>
+                                            <ul id="ind_drop" class="dropdown-menu">
+                                                <li class="nav-item">
+                                                    <a href="" class="nav-link">Long Term Course</a>
+                                                </li>
+                                                <li  class="nav-item">
+                                                    <a href="" class="nav-link">Short Term Course</a>
+                                                </li>
+                                               
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link">student</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link">Educator</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link">Gallery</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link">Blog</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link">Contact Us</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="" class="nav-link">
+                                                91-7210018919
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

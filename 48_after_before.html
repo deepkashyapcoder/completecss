@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      height: 100vh;
+      display: grid;
+      place-items: center;
+    }
+
+    p::before {
+      content: url(images/tick.png);
+      background-color: red;
+      color: white;
+    }
+
+    p::after {
+      content: "hello";
+      background-color: rgb(34, 255, 0);
+      color: white;
+    }
+
+
+    /* ================================================== */
+    /* Define some common styles for the pseudo-elements */
+    .example::before,
+    .example::after {
+      content: "";
+      /* This property is mandatory and is used to generate content */
+      display: block;
+      /* This property makes the pseudo-element a block-level element */
+      margin: 10px;
+      /* Adjust the margin as needed */
+      width: 50px;
+      /* Adjust the width as needed */
+      height: 50px;
+      /* Adjust the height as needed */
+      background-color: #3498db;
+      /* Adjust the background color as needed */
+      color: #fff;
+      /* Adjust the text color as needed */
+      text-align: center;
+      /* Center text within the pseudo-element */
+      line-height: 50px;
+      /* Set line height to vertically center text */
+    }
+
+    /* Style the main element */
+    .example {
+      position: relative;
+      /* Required for positioning pseudo-elements */
+      padding: 20px;
+      /* Adjust padding as needed */
+      background-color: #ecf0f1;
+      /* Adjust background color as needed */
+    }
+
+    /* Adjust the positioning of the pseudo-elements */
+    .example::before {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    .example::after {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+  </style>
+</head>
+
+<body>
+
+<img src="0" alt="" loading="lazy">
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita!</p>
+  <div class="example"></div>
+
+  <script>
+//     function compare(obj1, obj2) {
+//   if (obj1 === obj2) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+
+// const result = compare({ name: 'varun' }, { name: 'varun' });
+
+// console.log(result);
+const obj1={
+  "name":"Prashant"
+}
+const obj2={
+  "name":"Prashant"
+}
+const obj3=obj1
+console.log(obj1===obj3)
+console.log(obj1===obj2)
+
+  </script>
+</body>
+
+</html>

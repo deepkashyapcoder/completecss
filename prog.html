@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer {
+            width: 200px;
+            height: 200px;
+            /* background-color: red; */
+            background: conic-gradient(red 90%, yellow 0);
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+
+        }
+
+        .inner {
+            width: 160px;
+            height: 160px;
+            background-color: white;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+
+        }
+        h2{
+            font-size: 50px;
+        }
+        #percent{
+            font-size: 34px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="outer">
+        <div class="inner">
+            <h2>90<span id="percent">%</span></h2>
+        </div>
+    </div>
+</body>
+
+</html>

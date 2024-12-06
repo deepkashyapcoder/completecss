@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Descendant selector */
+        /* .box p{
+            color: red;
+        }
+        div p span{
+            color: green;
+        } */
+        /* ============================ */
+        /* direct Child selector */
+        /* 
+        ul>li>a{
+            text-decoration: none;
+            color: green;
+        } */
+        /* ============================ */
+        /* Adjecent sibling selector */
+        div+ul{
+           background-color: red;
+        }
+
+        /* ============================ */
+        /* General sibling selector */
+        div~p {
+            color: red;
+        }
+        /* ============================ */
+        /*  Attribute selector */
+        /* img[alt] {
+            border: 10px solid red;
+        } */
+/*
+        input[type="password"] {
+            border: 2px solid red;
+        } */
+/* img[alt~="image"]{
+    border: 10px solid red;
+} */
+
+    </style>
+</head>
+
+<body>
+
+
+    <!-- 
+        Simple Selector
+    Combinator Selector
+    attribute Selector
+    pseudo class and pseudo element
+
+    //===================================
+    simple selector
+    1. tag selector
+    2. id selector
+    3. class selector
+    4. universal selector
+    //===================================
+    Combinator selector
+    1. Descendant selector
+    2. Direct Child selector
+    3. Adjacent selector
+    4. general sibling selector
+    //===================================
+    Attribute selector
+    A[attr]            (Element with Specific Attribute)
+    A[attr = val]      (Attribute Whose value is exact value)
+    A[attr^= val]      (Attribute being with value)
+    A[attr|= val]      (Attribute being with value or Dash (-))
+    A[attr*= val]      (value occour in anywhere)
+    A[attr~= val]      (Element with Specific Attribute)
+
+
+    -->
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, velit. Distinctio, placeat, debitis voluptas
+        voluptatem dolorum itaque quia quaerat rem earum suscipit doloremque, quisquam veniam odit sequi assumenda
+        nesciunt amet excepturi cum. Aut dolor nesciunt sed amet facere numquam suscipit.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex molestias, eligendi nostrum iusto qui earum ipsa
+            dolores eveniet nihil quidem inventore corrupti minus sint doloribus rerum saepe quisquam sequi ut!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat neque officia beatae nostrum omnis delectus,
+            eaque esse sapiente eveniet quas corrupti earum inventore ipsa consequuntur consectetur optio nobis temporibus
+            nihil officiis! Architecto sint impedit eum, ipsa inventore in cumque aspernatur et eaque laboriosam id ratione
+            unde beatae voluptas dicta ducimus.</p>
+    
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae architecto veniam cupiditate rem voluptate
+            ad voluptatum laudantium. Vitae, excepturi molestias.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore tempora odio eaque quo. Aliquam cupiditate
+            aut magnam, velit, ullam fuga quo corrupti numquam ipsa autem amet illum, dolor reprehenderit pariatur
+            exercitationem nemo obcaecati vitae mollitia rem sunt commodi. Culpa, quis?</p>
+
+
+    </div>
+    <ul>
+        <li>
+            <a href="">Home</a>
+        </li>
+        <li>
+            <a href="">About us</a>
+        </li>
+        <li>
+            <a href="">Contact Us</a>
+        </li>
+        <li>
+            <a href="">Read More</a>
+        </li>
+        <li>
+            <a href="">Services</a>
+        </li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis quam quod reprehenderit sit. Vel perferendis excepturi culpa, distinctio officia consequatur voluptatem nobis sed iure nam, sint placeat vero, iste rerum!</p>
+    <ul>
+        <li>
+            <a href="">Home</a>
+        </li>
+        <li>
+            <a href="">About us</a>
+        </li>
+        <li>
+            <a href="">Contact Us</a>
+        </li>
+        <li>
+            <a href="">Read More</a>
+        </li>
+        <li>
+            <a href="">Services</a>
+        </li>
+    </ul>
+   
+
+    <img src="images/download.jpg" alt="image-of" width="200px">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio tenetur molestiae delectus vero eligendi
+        quibusdam veritatis omnis nam tempora maxime modi harum rem inventore sed, eius quasi expedita. Qui, dolorem
+        reprehenderit sequi quos ratione unde magnam expedita minima facere libero!</p>
+    <img src="images/Hedkey Post (15-11-23).jpg" alt=" of image ncjdscndsncn" width="200px"> <br>
+    <input type="text"> <br>
+    <input type="text"> <br>
+    <input type="password"> <br>
+    <input type="text"> <br>
+    <input type="checkbox" name="" id=""> <br>
+    <input type="password"> <br>
+    <!-- <h1>hello Welcome to ur phpsession<h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic numquam, nulla unde assumenda fuga illum et eos, eum iusto dolores autem consequuntur architecto doloremque ea, sapiente accusantium nam? Eligendi placeat enim dignissimos quos natus animi illum provident, dicta voluptatem sit!</p> -->
+
+    <div>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis repellat pariatur temporibus fugit harum minus quos laborum quae? Molestias corporis animi architecto commodi quisquam maiores quo voluptas modi? Natus, delectus.</p>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: palegoldenrod;
+            border: 1px solid blue;
+            transition: 1s;
+
+        }
+
+        .box:hover {
+            /* transform: perspective(100px) rotateX(180deg); */
+            /* transform-origin: right center; */
+            /* transform:perspective(800px) rotate(360deg); */
+            /* transform: translateY(40px) ; */
+          
+            /* cursor: pointer; */
+
+
+            transform: perspective(800px) rotateY(120deg);
+            /* transform: perspective(800px) translateZ(40px); */
+            transform-origin: 60%;
+        }
+        .outer-div{
+            width: 200px;
+            height: 200px;
+            background-color: gray;
+        }
+        </style>
+</head>
+
+<body>
+    <a href=""></a>
+
+    <!-- 
+    3D transform
+    rotateX
+    rotateY
+    rotateZ
+    rotate3d()
+    translateZ()
+    translate3d()
+    scale3d(x, y, z)
+    scaleZ()
+    perspective(n)
+   
+    none
+     -->
+    <div class="outer-div">
+        <div class="box">
+            Card
+        </div>
+    </div>
+    <script src="https://cdn.ckeditor.com/ckeditor5/40.2.0/classic/ckeditor.js"></script>
+
+   
+</body>
+
+</html>

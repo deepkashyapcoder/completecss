@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* ====================================== */
+        /* first-class, last-class */
+        /* li:first-child {
+            color: red;
+        }
+        li:last-child{
+            color: rgb(0, 255, 255);
+        }  */
+        /* ====================================== */
+        /* nth-child, nth-last-child */
+        /* li:nth-child(n){
+            color: red;
+        } */
+        /* li:nth-last-child(2n){
+            color: rgb(255, 0, 251);
+        } */
+        /* ====================================== */
+        /* nth-child, nth-last-child */
+        /* p:nth-of-type(2){
+            color: green;
+        }  */
+        /* p:nth-last-of-type(2){
+            color: green;
+        } */
+        /* ====================================== */
+        /* nth-child, nth-last-child */
+        /* li:only-child{
+            color: red;
+        } */
+        /* li:only-of-type{
+            color: red;
+        } */
+        /* ====================================== */
+        /* first-of-type, last-of-type*/
+        /* p:first-of-type{
+            color: red;
+        } */
+        /* p:last-of-type{
+            color: red;
+        }  */
+        /* ====================================== */
+        /* empty*/
+        /* div:empty{
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            background-color: green;
+        }  */
+        /* ====================================== */
+        /* not*/
+        /* p:not(.text){
+        color: red;
+        }  */
+        /* ====================================== */
+        /* link, hover, visited, active*/
+        /* a:link {
+            color: red;
+        } */
+
+        /* a:hover{
+            color: blue;
+        } */
+        /* a:visited{
+            color: green;
+        } */
+        /* a:active{
+            color: tomato;
+        } */
+        /* ====================================== */
+        /*target*/
+        /* p:target {
+            background-color: rgb(255, 255, 0);
+        }  */
+        /* ====================================== */
+        /*focus*/
+        input:focus {
+            /* outline: none; */
+            /* border: 3px solid red;
+            background-color: yellow; */
+        }
+
+        /* div:empty{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            border-radius: 50%;
+        } */
+
+        /* input[type="checkbox"]:checked{
+           box-shadow: 0 0 0 3px red;
+        }  */
+        input:disabled {
+            /* border: 5px solid red; */
+            /* background-color: yellow; */
+        }
+
+        /* input:enabled{
+            border: 3px solid blue;
+        }  */
+        /* input:required{
+            border: 2px solid tomato;
+            outline: none;
+            box-shadow: 2px 2px 2px 2px rgb(205, 205, 205);
+            border-radius: 10px;
+        } */
+        /* input:in-range{
+            background-color: green;
+        } 
+        input:out-of-range{
+            background-color: red;
+        }
+        input:valid{
+            background: green;
+        } 
+        input[type="email"]:invalid{
+            background: rgb(0, 66, 128);
+        } */
+
+
+
+        /* ============================================= */
+        /* li:first-child {
+            background-color: grey;
+        } */
+        /* li:last-child{
+            background-color: green;
+        } */
+        /* li:nth-child(n){
+            background-color: red;
+        } */
+        /* li:nth-last-child(2n){
+            background-color: gray;
+        } */
+        /* li:nth-last-of-type(2n){
+            background-color: gray;
+        } */
+        /* li:only-child{
+            background-color: gray;
+        } */
+        /* li:only-of-type{
+            background-color: red;
+        } */
+        /* li:first-of-type{
+            background-color: red;
+        } */
+        /* li:last-of-type{
+            background-color: red;
+        } */
+        /* div:empty{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 50%;
+        } */
+        /* a:active{
+            color: green;
+        } */
+        /* a:visited{
+            color: tomato;
+        } */
+        /* p:target{
+            background-color: red;
+        } */
+        /* input:focus{
+            background-color: green;
+        } */
+        /* input:checked{
+   box-shadow: 2px 2px 2px red;
+} */
+
+        /* input:in-range {
+            background-color: green;
+        }
+
+        input:out-of-range {
+            background-color: red;
+        }
+        input:read-only{
+            background-color: blue;
+        } */
+        /* input:read-write{
+            background-color: blue;
+        } */
+/* 
+        input:valid{
+            background-color: green;
+        }
+        input:invalid{
+            background-color: red;
+        } */
+    </style>
+
+</head>
+
+<body>
+    <!--
+    pseudo class 
+        first-class
+        last-class
+        nth-child
+        nth-last-child
+        nth-last-of-type
+        nth-of-type
+        only-child (select only one child element)
+        only-of-type
+        first-of-type
+        last-of-type
+        empty
+        link, hover, visited, active
+        target
+        focus
+        ===============
+        checked
+        disabled
+        enabled
+        required-
+        in-range (use only number)
+        out-of-range (use only number)
+        read-only
+        read-write
+        valid
+        invalid
+        default (use only check box, radio and options)
+     -->
+    <div></div>
+    <h3>Hello Welcoem to Our Pseudo class </h3>
+    <ul>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <!-- <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li> -->
+    </ul>
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla laborum dignissimos molestiae
+        explicabo, adipisci
+        itaque voluptatibus eveniet tempora sapiente neque aspernatur ullam nobis omnis? Eligendi dicta cum sapiente
+        saepe laborum?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto aut architecto laborum? Beatae assumenda
+        recusandae nihil optio illum numquam, quo nemo! Dignissimos voluptate dolorum maiores corrupti. Iste illum optio
+        possimus illo similique reiciendis! Repellat incidunt doloribus porro, dolor sunt mollitia.</p>
+    <ul>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+    </ul>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla laborum dignissimos molestiae explicabo,
+            adipisci itaque voluptatibus eveniet tempora sapiente neque aspernatur ullam nobis omnis? Eligendi dicta cum
+            sapiente saepe laborum?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto aut architecto laborum? Beatae assumenda
+            recusandae nihil optio illum numquam, quo nemo! Dignissimos voluptate dolorum maiores corrupti. Iste illum
+            optio possimus illo similique reiciendis! Repellat incidunt doloribus porro, dolor sunt mollitia.</p>
+    </div>
+    <div></div>
+    <ul>
+        <li>
+            <a href="#html">Home</a>
+        </li>
+        <li>
+            <a href="#css">About us</a>
+        </li>
+        <li>
+            <a href="#js">Contact Us</a>
+        </li>
+        <li>
+            <a href="#php">Services</a>
+        </li>
+    </ul>
+    <p id="html">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, ratione.</p>
+    <p id="css">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, ratione.</p>
+    <p id="js">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, ratione.</p>
+    <p id="php">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, ratione.</p>
+
+
+    <input type="text" disabled> <br>
+    <input type="text" name="" id=""> <br>
+    <input type="text" name="" id="" disabled> <br>
+    <input type="text" name="" id="" required> <br>
+    <input type="number" name="" id="" min="10" max="30"> <br>
+    <input type="email" name="" id="" required> <br>
+    <input type="checkbox"> <br>
+    <a href="">hello</a>
+    <input type="text" name="" id="" readonly>
+</body>
+
+</html>

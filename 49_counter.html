@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* body{
+            counter-reset: my-counter;
+
+        }
+        h2::before{
+            content:"Chapter" counter(my-counter, upper-roman) ":";
+            counter-increment: my-counter 1;
+        } */
+
+        /* ======================================= */
+        /* sub counter */
+        .my {
+            counter-reset: section;
+        }
+        h1{
+            counter-reset: subsection;
+        }ma
+        h1::before{
+            content: "Section" counter(section)":";
+            counter-increment: section;
+            color: red;
+           
+        }
+        h2::before{
+            content:counter(section)"."counter(subsection)":" ;
+            counter-increment: subsection;
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Counter 
+    1. counter-increment
+    2. counter-reset
+    3. counter()
+    
+    -->
+
+    <!-- <h1>Html and CSS Conter</h1>
+    <h2>Lorem, ipsum dolor.</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis alias cum dolore, animi quam deserunt iusto sunt, explicabo, nulla fugiat labore! Ea provident soluta debitis voluptatibus nemo quis cupiditate excepturi?</p>
+    <h2>Lorem, ipsum dolor.</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis alias cum dolore, animi quam deserunt iusto sunt, explicabo, nulla fugiat labore! Ea provident soluta debitis voluptatibus nemo quis cupiditate excepturi?</p>
+    <h2>Lorem, ipsum dolor.</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis alias cum dolore, animi quam deserunt iusto sunt, explicabo, nulla fugiat labore! Ea provident soluta debitis voluptatibus nemo quis cupiditate excepturi?</p>
+    <h2>Lorem, ipsum dolor.</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis alias cum dolore, animi quam deserunt iusto sunt, explicabo, nulla fugiat labore! Ea provident soluta debitis voluptatibus nemo quis cupiditate excepturi?</p>
+    <h2>Lorem, ipsum dolor.</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis alias cum dolore, animi quam deserunt iusto sunt, explicabo, nulla fugiat labore! Ea provident soluta debitis voluptatibus nemo quis cupiditate excepturi?</p>
+    <h2>Lorem, ipsum dolor.</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis alias cum dolore, animi quam deserunt iusto sunt, explicabo, nulla fugiat labore! Ea provident soluta debitis voluptatibus nemo quis cupiditate excepturi?</p> -->
+
+
+    <!-- for sub counter -->
+    <div class="my">
+
+    
+    <h1>HTML and CSS</h1>
+    <h2>HTML tutorial</h2>
+    <h2>CSS tutorial</h2>
+    <h2>JS tutorial</h2>
+    <h1>HTML and CSS</h1>
+    <h2>HTML tutorial</h2>
+    <h2>CSS tutorial</h2>
+    <h2>JS tutorial</h2>
+    <h1>HTML and CSS</h1>
+    <h2>HTML tutorial</h2>
+    <h2>CSS tutorial</h2>
+    <h2>JS tutorial</h2>
+</div>
+</body>
+
+</html>

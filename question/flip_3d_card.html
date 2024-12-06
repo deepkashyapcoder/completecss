@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Members Gallery</title>
+    <style>
+        .team-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .team-member {
+            width: 200px;
+            height: 300px;
+            perspective: 1000px;
+            margin: 20px;
+            cursor: pointer;
+        }
+
+        .team-member-card {
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition:  0.5s;
+        }
+
+        .team-member-card:hover {
+            transform: rotateY(180deg);
+        }
+
+        .team-member-card div {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .team-member-card .front {
+            background-color: #3498db;
+        }
+
+        .team-member-card .back {
+            background-color: #2ecc71;
+            transform: rotateY(180deg);
+        }
+
+        .team-member img {
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 50%;
+        }
+
+        .team-member h3 {
+            margin: 0;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="team-container">
+        <div class="team-member">
+            <div class="team-member-card">
+                <div class="front">
+                    <img src="team-member1.jpg" alt="Team Member 1">
+                    <h3>John Doe</h3>
+                </div>
+                <div class="back">
+                    <p>Position: Developer</p>
+                    <p>Experience: 5 years</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add more team members as needed -->
+
+    </div>
+
+</body>
+
+</html>

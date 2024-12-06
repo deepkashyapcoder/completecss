@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            background-color: red;
+            width: 300px;
+            height: 300px;
+            transform: rotateX(60deg);
+        }
+
+        .outer {
+            background-color: rgb(36, 36, 36);
+            width: 300px;
+            height: 300px;
+            perspective: 800px;
+            transform: rotateY(30deg);
+            transform-style: preserve-3d;
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- transform-style
+        flat
+        preserve-3d
+    
+    -->
+    <div class="outer">
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

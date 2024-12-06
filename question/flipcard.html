@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card{
+            position: relative;
+        }
+        .front{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            display: grid;
+            place-items: center;
+            position: absolute;
+            backface-visibility: hidden;
+
+        }
+        .back{
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            display: grid;
+            place-items: center;
+            position: absolute;
+          
+            z-index: -1;
+            /* backface-visibility: hidden; */
+
+        }
+        .card{
+            width: 200px;
+            height: 200px;
+            transition: 0.5s;
+            transform-style: preserve-3d;
+        }
+        .card:hover{
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="card">
+                <div class="front">
+                    <!-- <img src="team-member1.jpg" alt=""> -->
+                    <h3>John Doe</h3>
+                </div>
+                <div class="back">
+                    <p>Position: Developer</p>
+                    <p>Experience: 5 years</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

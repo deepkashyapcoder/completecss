@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box~p{
+            color: red;
+        }
+
+        /* img[alt]{
+            border: 10px solid red;
+        } */
+        /* img[alt ^= "i"]{
+            border: 10px solid red;
+        } */
+        /* img[alt |= "nature-img"]{
+            border: 10px solid red;
+        } */
+        img[alt *= "a"]{
+            border: 10px solid red;
+        }
+    </style>
+</head>
+<body>
+     <!-- 
+        Simple Selector
+    Combinator Selector
+    attribute Selector
+    pseudo class and pseudo element
+
+    //===================================
+    simple selector
+    1. tag selector
+    2. id selector
+    3. class selector
+    4. universal selector
+    //===================================
+    Combinator selector
+    1. Descendant selector
+    2. Direct Child selector
+    3. Adjacent selector
+    4. general sibling selector
+    //===================================
+    Attribute selector
+    A[attr]            (Element with Specific Attribute)
+    A[attr = val]      (Attribute Whose value is exact value)
+    A[attr^= val]      (Attribute being with value)
+    A[attr|= val]      (Attribute being with value or Dash (-))
+    A[attr*= val]      (value occour in anywhere)
+    A[attr~= val]      (Element with Specific Attribute)
+
+
+    -->
+
+
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <img src="bo.jpg" alt="this is a nature image" width="200">
+    <img src="bo.jpg"  width="200">
+</body>
+</html>

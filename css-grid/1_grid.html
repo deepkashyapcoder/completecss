@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: lightgray;
+            width: 70%;
+            margin: 70px 0 0 50px;
+            display: grid;
+            height: 500px;
+            /* grid-template-columns: 150px 200px 300px; */
+            /* grid-template-columns: 33% 33% 33%; */
+            /* grid-template-columns: 33% auto 33%; */
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            grid-template-columns: repeat(2, 33%) 20%;
+            /* grid-template-rows: 150px 120px; */
+            grid-template-rows: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .item1{
+            background-color: orangered;
+        }
+        .item2{
+            background-color: yellowgreen;
+        }
+        .item3{
+            background-color: slateblue;
+        }
+        .item4{
+            background-color: royalblue;
+        }
+        .item5{
+            background-color: goldenrod;
+        }
+        .item6{
+            background-color: hotpink;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>CSS Grid</h1>
+
+    <div class="container">
+        <div class="item item1">First</div>
+        <div class="item item2">Second</div>
+        <div class="item item3">Third</div>
+        <div class="item item4">Fourth</div>
+        <div class="item item5">Fifth</div>
+        <div class="item item6">Sixth</div>
+    </div>
+</body>
+</html>
